@@ -1,2 +1,3 @@
-# studlan-svg-layout
-Svg layout for the seating at StudLan
+# studlan Seating Layouts
+
+SVG seating layouts for [studlan](https://github.com/CasualGaming/studlan).
