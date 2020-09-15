@@ -287,7 +287,7 @@
         <g class="seats" transform="translate(3, 23.7)">
             <g class="seat-row" transform="translate(0.0, 2.25)">
                 <rect x="0" y="-2.25" width="18.8" height="6.1" class="seat-row-outline" />
-                <text x="8" y="-0.5" font-size="1">Rad V3</text>
+                <text x="8" y="-0.5" font-size="1">Rad W1</text>
                 <rect x="0" y="0.5" width="0.6" height="0.8" class="spacer" />
                 <a class="seat" href="#"><rect x="0.6" y="0.0" width="0.8" height="0.6" /></a>
                 <a class="seat" href="#"><rect x="0.6" y="1.2" width="0.8" height="0.6" /></a>
@@ -331,7 +331,7 @@
             </g>
             <g class="seat-row" transform="translate(0.0, 8.35)">
                 <rect x="0" y="-2.25" width="18.8" height="6.1" class="seat-row-outline" />
-                <text x="8" y="-0.5" font-size="1">Rad V2</text>
+                <text x="8" y="-0.5" font-size="1">Rad W2</text>
                 <rect x="0" y="0.5" width="0.6" height="0.8" class="spacer" />
                 <a class="seat" href="#"><rect x="0.6" y="0.0" width="0.8" height="0.6" /></a>
                 <a class="seat" href="#"><rect x="0.6" y="1.2" width="0.8" height="0.6" /></a>
@@ -375,7 +375,7 @@
             </g>
             <g class="seat-row" transform="translate(0.0, 14.45)">
                 <rect x="0" y="-2.25" width="18.8" height="6.1" class="seat-row-outline" />
-                <text x="8" y="-0.5" font-size="1">Rad V1</text>
+                <text x="8" y="-0.5" font-size="1">Rad W3</text>
                 <rect x="0" y="0.5" width="0.6" height="0.8" class="spacer" />
                 <a class="seat" href="#"><rect x="0.6" y="0.0" width="0.8" height="0.6" /></a>
                 <a class="seat" href="#"><rect x="0.6" y="1.2" width="0.8" height="0.6" /></a>
@@ -423,7 +423,7 @@
         <g class="seats" transform="translate(26.2, 23.7)">
             <g class="seat-row" transform="translate(0.0, 2.25)">
                 <rect x="0" y="-2.25" width="18.8" height="6.1" class="seat-row-outline" />
-                <text x="8" y="-0.5" font-size="1">Rad H3</text>
+                <text x="8" y="-0.5" font-size="1">Rad E1</text>
                 <rect x="0" y="0.5" width="0.6" height="0.8" class="spacer" />
                 <a class="seat" href="#"><rect x="0.6" y="0.0" width="0.8" height="0.6" /></a>
                 <a class="seat" href="#"><rect x="0.6" y="1.2" width="0.8" height="0.6" /></a>
@@ -467,7 +467,7 @@
             </g>
             <g class="seat-row" transform="translate(0.0, 8.35)">
                 <rect x="0" y="-2.25" width="18.8" height="6.1" class="seat-row-outline" />
-                <text x="8" y="-0.5" font-size="1">Rad H2</text>
+                <text x="8" y="-0.5" font-size="1">Rad E2</text>
                 <rect x="0" y="0.5" width="0.6" height="0.8" class="spacer" />
                 <a class="seat" href="#"><rect x="0.6" y="0.0" width="0.8" height="0.6" /></a>
                 <a class="seat" href="#"><rect x="0.6" y="1.2" width="0.8" height="0.6" /></a>
@@ -511,7 +511,7 @@
             </g>
             <g class="seat-row" transform="translate(0.0, 14.45)">
                 <rect x="0" y="-2.25" width="18.8" height="6.1" class="seat-row-outline" />
-                <text x="8" y="-0.5" font-size="1">Rad H1</text>
+                <text x="8" y="-0.5" font-size="1">Rad E3</text>
                 <rect x="0" y="0.5" width="0.6" height="0.8" class="spacer" />
                 <a class="seat" href="#"><rect x="0.6" y="0.0" width="0.8" height="0.6" /></a>
                 <a class="seat" href="#"><rect x="0.6" y="1.2" width="0.8" height="0.6" /></a>
