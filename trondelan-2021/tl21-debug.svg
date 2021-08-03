@@ -110,7 +110,7 @@
     </style>
 
     <!-- DEBUG: Image frame -->
-    <rect width="50" height="50" style="fill: none; stroke: #00f; stroke-width: 0.1px;"/>
+    <!--<rect width="50" height="50" style="fill: none; stroke: #00f; stroke-width: 0.1px;"/>-->
 
     <!-- Hall -->
     <g class="hall" transform="translate(1, 1)">
@@ -217,9 +217,9 @@
         </g>
 
         <!-- Info -->
-        <g class="walls" transform="translate(0, -0.5)">
-            <text x="3" y="0" font-size="0.8" font-style="italic" font-weight="bold">Utleirahallen</text>
-            <text x="46" y="0" font-size="0.7">48×44m²</text>
+        <g transform="translate(24, 11)">
+            <text x="0" y="0" font-size="0.8" font-style="italic" font-weight="bold">Utleirahallen</text>
+            <text x="0" y="0.8" font-size="0.7">48×44m²</text>
         </g>
 
         <!-- Walls -->
@@ -283,7 +283,7 @@
         <!-- Stage -->
         <g class="stage" transform="translate(16.1, 16)">
             <rect width="15.8" height="6" class="stage-area"/>
-            <text x="7.9" y="1.2" class="area-title">Scene</text>
+            <text x="7.9" y="1.4" class="area-title">Scene</text>
 
             <!-- Left team (6.4+1 wide) -->
             <g class="seating-row" transform="translate(0.5, 0)">
@@ -309,7 +309,7 @@
             <g class="seating-row" transform="translate(0, 0)">
                 <!-- Area and title -->
                 <rect x="0" y="0" width="11.8" height="6" class="crew-seating-row-area"/>
-                <text x="5.9" y="1.2" class="area-title">Crew</text>
+                <text x="5.9" y="1.4" class="area-title">Crew</text>
                 <!-- Tables -->
                 <rect x="0" y="2.6" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <rect x="0.6" y="2.1" width="0.8" height="0.6" class="seat"/>
@@ -344,7 +344,7 @@
             <g class="seating-row" transform="translate(0, 0)">
                 <!-- Area and title -->
                 <rect x="0" y="0" width="11.8" height="6" class="crew-seating-row-area"/>
-                <text x="5.9" y="1.2" class="area-title">Crew</text>
+                <text x="5.9" y="1.4" class="area-title">Crew</text>
                 <!-- Tables -->
                 <rect x="0" y="2.6" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <rect x="0.6" y="2.1" width="0.8" height="0.6" class="seat"/>
@@ -379,7 +379,7 @@
             <g class="seating-row" transform="translate(0.0, 0)">
                 <!-- Area and title -->
                 <rect x="0" y="0" width="18.8" height="6" class="participant-seating-row-area"/>
-                <text x="9.4" y="1.2" class="area-title">Rad V1</text>
+                <text x="9.4" y="1.4" class="area-title">Rad V1</text>
                 <!-- Tables -->
                 <rect x="0" y="2.6" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <a class="seat" href="#"><rect x="0.6" y="2.1" width="0.8" height="0.6" class="seat"/></a>
@@ -425,7 +425,7 @@
             <g class="seating-row" transform="translate(0.0, 6)">
                 <!-- Area and title -->
                 <rect x="0" y="0" width="18.8" height="6" class="participant-seating-row-area"/>
-                <text x="9.4" y="1.2" class="area-title">Rad V2</text>
+                <text x="9.4" y="1.4" class="area-title">Rad V2</text>
                 <!-- Tables -->
                 <rect x="0" y="2.6" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <a class="seat" href="#"><rect x="0.6" y="2.1" width="0.8" height="0.6" class="seat"/></a>
@@ -471,7 +471,7 @@
             <g class="seating-row" transform="translate(0.0, 12)">
                 <!-- Area and title -->
                 <rect x="0" y="0" width="18.8" height="6" class="participant-seating-row-area"/>
-                <text x="9.4" y="1.2" class="area-title">Rad V3</text>
+                <text x="9.4" y="1.4" class="area-title">Rad V3</text>
                 <!-- Tables -->
                 <rect x="0" y="2.6" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <a class="seat" href="#"><rect x="0.6" y="2.1" width="0.8" height="0.6" class="seat"/></a>
@@ -521,7 +521,7 @@
             <g class="seating-row" transform="translate(0.0, 0)">
                 <!-- Area and title -->
                 <rect x="0" y="0" width="18.8" height="6" class="participant-seating-row-area"/>
-                <text x="9.4" y="1.2" class="area-title">Rad H1</text>
+                <text x="9.4" y="1.4" class="area-title">Rad H1</text>
                 <!-- Tables -->
                 <rect x="0" y="2.6" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <a class="seat" href="#"><rect x="0.6" y="2.1" width="0.8" height="0.6" class="seat"/></a>
@@ -567,7 +567,7 @@
             <g class="seating-row" transform="translate(0.0, 6)">
                 <!-- Area and title -->
                 <rect x="0" y="0" width="18.8" height="6" class="participant-seating-row-area"/>
-                <text x="9.4" y="1.2" class="area-title">Rad H2</text>
+                <text x="9.4" y="1.4" class="area-title">Rad H2</text>
                 <!-- Tables -->
                 <rect x="0" y="2.6" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <a class="seat" href="#"><rect x="0.6" y="2.1" width="0.8" height="0.6" class="seat"/></a>
@@ -613,7 +613,7 @@
             <g class="seating-row" transform="translate(0.0, 12)">
                 <!-- Area and title -->
                 <rect x="0" y="0" width="18.8" height="6" class="participant-seating-row-area"/>
-                <text x="9.4" y="1.2" class="area-title">Rad H3</text>
+                <text x="9.4" y="1.4" class="area-title">Rad H3</text>
                 <!-- Tables -->
                 <rect x="0" y="2.6" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <a class="seat" href="#"><rect x="0.6" y="2.1" width="0.8" height="0.6" class="seat"/></a>
