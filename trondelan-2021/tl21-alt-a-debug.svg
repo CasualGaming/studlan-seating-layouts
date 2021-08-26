@@ -279,7 +279,7 @@
             <rect x="3" y="7.25" width="42" height="2.5" class="sleeping-row-area"/>
             <text x="24" y="8.5" class="area-title">Soverekke</text>
             <rect x="3" y="12.5" width="42" height="2.5" class="sleeping-row-area"/>
-            <text x="24" y="14.0" class="area-title">Soverekke</text>
+            <text x="24" y="13.75" class="area-title">Soverekke</text>
         </g>
 
         <!-- Stage -->
