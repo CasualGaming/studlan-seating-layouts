@@ -19,7 +19,7 @@
     - The VIP seats and normal seats should be in separate seatmaps in studlan.
 - Crew seats:
     - Similar to VIP seats.
-    - Some seats are reserved for scene media stuff and NOC stuff.
+    - Some seats are reserved for scene media stuff, NOC stuff, crew stuff, etc.
 
 ## Backup Maps
 

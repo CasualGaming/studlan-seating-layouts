@@ -858,4 +858,181 @@
             </g>
         </g>
     </g>
+
+    <!-- CUSTOM STUFF BELOW -->
+
+    <style type="text/css">
+        /* Hide area titles, they get in the way */
+        .area-title {
+            display: none;
+        }
+
+        text.legend {
+            font-size: 0.5px;
+        }
+
+        rect.power {
+            stroke: #666;
+            stroke-width: 0.05px;
+        }
+
+        polyline.power {
+            stroke-width: 0.2px;
+            fill: none;
+        }
+
+        rect.outlet-2x-400v-63a {
+            fill: purple;
+        }
+
+        rect.central-400v-63a {
+            fill: red;
+        }
+
+        rect.central-400v-32a {
+            fill: orange;
+        }
+
+        polyline.cable-400v-63a {
+            stroke: red;
+        }
+
+        polyline.cable-400v-32a {
+            stroke: orange;
+        }
+
+        polyline.cable-230v-16a {
+            stroke: blue;
+        }
+
+        polyline.cable-3x-230v-16a {
+            stroke: purple;
+        }
+    </style>
+
+    <!-- Legend -->
+    <g transform="translate(9, 46)">
+        <!-- Uttak, 3-fase, 400V, 63A -->
+        <text x="0.5" y="0.0" class="legend">Uttak (2x)</text>
+        <text x="0.5" y="0.5" class="legend">3P</text>
+        <text x="0.5" y="1.0" class="legend">400V</text>
+        <text x="0.5" y="1.5" class="legend">63A</text>
+        <rect x="0" y="2" width="1" height="0.5" class="power outlet-2x-400v-63a"/>
+        <!-- Sentral, 3-fase, 400V, 63A -->
+        <text x="3.5" y="0.0" class="legend">Sentral</text>
+        <text x="3.5" y="0.5" class="legend">3P</text>
+        <text x="3.5" y="1.0" class="legend">400V</text>
+        <text x="3.5" y="1.5" class="legend">63A</text>
+        <rect x="3" y="2" width="1" height="0.5" class="power central-400v-63a"/>
+        <!-- Sentral, 3-fase, 400V, 32A -->
+        <text x="6.5" y="0.0" class="legend">Sentral</text>
+        <text x="6.5" y="0.5" class="legend">3P</text>
+        <text x="6.5" y="1.0" class="legend">400V</text>
+        <text x="6.5" y="1.5" class="legend">32A</text>
+        <rect x="6" y="2" width="1" height="0.5" class="power central-400v-32a"/>
+    </g>
+    <g transform="translate(32, 46)">
+        <!-- Kabel, 3-fase, 400V, 63A -->
+        <text x="0.5" y="0.0" class="legend">Kabel</text>
+        <text x="0.5" y="0.5" class="legend">3P</text>
+        <text x="0.5" y="1.0" class="legend">400V</text>
+        <text x="0.5" y="1.5" class="legend">63A</text>
+        <polyline class="power cable-400v-63a" points="0 2.25, 1 2.25"/>
+        <!-- Kabel, 3-fase, 400V, 32A -->
+        <text x="3.5" y="0.0" class="legend">Kabel</text>
+        <text x="3.5" y="0.5" class="legend">3P</text>
+        <text x="3.5" y="1.0" class="legend">400V</text>
+        <text x="3.5" y="1.5" class="legend">32A</text>
+        <polyline class="power cable-400v-32a" points="3 2.25, 4 2.25"/>
+        <!-- Kabel, 1-fase, 230V, 16A -->
+        <text x="6.5" y="0.0" class="legend">Kabel</text>
+        <text x="6.5" y="0.5" class="legend">1P</text>
+        <text x="6.5" y="1.0" class="legend">230V</text>
+        <text x="6.5" y="1.5" class="legend">16A</text>
+        <polyline class="power cable-230v-16a" points="6 2.25, 7 2.25"/>
+        <!-- Kabel 3x, 1-fase, 230V, 16A -->
+        <text x="9.5" y="0.0" class="legend">Kabel (2-3x)</text>
+        <text x="9.5" y="0.5" class="legend">1P</text>
+        <text x="9.5" y="1.0" class="legend">230V</text>
+        <text x="9.5" y="1.5" class="legend">16A</text>
+        <polyline class="power cable-3x-230v-16a" points="9 2.25, 10 2.25"/>
+    </g>
+
+    <!-- 2x 63A fra nord -->
+    <rect x="22" y="0.5" width="1" height="0.5" class="power outlet-2x-400v-63a"/>
+    <rect x="24" y="17" width="1" height="0.5" class="power central-400v-63a"/>
+    <rect x="25" y="17" width="1" height="0.5" class="power central-400v-63a"/>
+    <polyline class="power cable-400v-63a" points="22.75 1, 22.75 1.5, 25.25 1.5, 25.25 17.25"/>
+    <polyline class="power cable-400v-63a" points="22.25 1, 22.25 2, 24.75 2, 24.75 17.25"/>
+
+    <!-- 2x 63A fra sør (1 til serverrom m.m.) -->
+    <rect x="27" y="48.5" width="1" height="0.5" class="power outlet-2x-400v-63a"/>
+    <rect x="26" y="45.5" width="1" height="0.5" class="power central-400v-63a"/>
+    <rect x="27" y="45.5" width="1" height="0.5" class="power central-400v-63a"/>
+    <polyline class="power cable-400v-63a" points="27.75 48.5, 27.75 46.75, 24.75 46.75, 24.75 45.25, 26.5 45.25, 26.5 45.5"/>
+    <polyline class="power cable-400v-63a" points="27.25 48.5, 27.25 47.25, 24.25 47.25, 24.25 44.75, 27.5 44.75, 27.5 45.5"/>
+
+    <!-- 32A til scene m.m. -->
+    <rect x="22" y="17" width="1" height="0.5" class="power central-400v-32a"/>
+    <polyline class="power cable-400v-32a" points="23 17.25, 24 17.25"/>
+
+    <!-- 32A til crewrader -->
+    <rect x="27" y="17" width="1" height="0.5" class="power central-400v-32a"/>
+    <polyline class="power cable-400v-32a" points="27 17.25, 26.5 17.25, 26.5 16.5, 24.25 16.5, 24.25 17"/>
+
+    <!-- 2x32A til nordlige rader -->
+    <rect x="23" y="26.2" width="0.5" height="1" class="power central-400v-32a"/>
+    <rect x="26.5" y="26.2" width="0.5" height="1" class="power central-400v-32a"/>
+    <polyline class="power cable-400v-32a" points="25.25 17.5, 25.25 22, 23.25 22, 23.25 26.2"/>
+    <polyline class="power cable-400v-32a" points="25.75 17.5, 25.75 22, 26.75 22, 26.75 26.2"/>
+
+    <!-- 2x32A til sørlige rader -->
+    <rect x="23" y="40.6" width="0.5" height="1" class="power central-400v-32a"/>
+    <rect x="26.5" y="40.6" width="0.5" height="1" class="power central-400v-32a"/>
+    <polyline class="power cable-400v-32a" points="27.75 45.5, 27.75 43.75, 26.75 43.75, 26.75 41.6"/>
+    <polyline class="power cable-400v-32a" points="27.25 45.5, 27.25 44.25, 26.25 44.25, 26.25 41.1, 23.5 41.1"/>
+
+    <!-- 16A til scene m.m. -->
+    <!-- PC-er -->
+    <polyline class="power cable-230v-16a" points="22.25 17.5, 22.25 17.75, 17.5 17.75, 17.5 19.5, 18 19.5"/>
+    <polyline class="power cable-230v-16a" points="22.75 17.5, 22.75 17.75, 27 17.75"/>
+    <polyline class="power cable-230v-16a" points="28 17.75, 29 17.75"/>
+    <polyline class="power cable-230v-16a" points="30 17.75, 32.5 17.75, 32.5 19.5"/>
+    <polyline class="power cable-230v-16a" points="32.5 19.5, 32 19.5"/>
+    <!-- Projektor og høyttalere -->
+    <polyline class="power cable-230v-16a" points="22.5 17.5, 22.5 21, 25 21, 25 24"/>
+    <polyline class="power cable-230v-16a" points="22.5 21, 16.5 21"/>
+    <polyline class="power cable-230v-16a" points="25 21, 33.5 21"/>
+
+    <!-- 16A til crewrader -->
+    <!-- Venstre -->
+    <polyline class="power cable-3x-230v-16a" points="27.25 17.5, 27.25 20.5, 22.75 20.5"/>
+    <polyline class="power cable-3x-230v-16a" points="22.25 20.5, 15.5 20.5"/>
+    <polyline class="power cable-230v-16a" points="15.5 20.5, 15.5 17.3, 14.5 17.3"/>
+    <polyline class="power cable-230v-16a" points="15.5 20.5, 14.5 20.5"/>
+    <polyline class="power cable-230v-16a" points="15.5 20.5, 15.5 21.7, 14.5 21.7"/>
+    <!-- Høyre -->
+    <polyline class="power cable-3x-230v-16a" points="27.75 17.5, 27.75 20.5, 34.5 20.5"/>
+    <polyline class="power cable-230v-16a" points="34.5 20.5, 34.5 17.3, 35.5 17.3"/>
+    <polyline class="power cable-230v-16a" points="34.5 20.5, 35.5 20.5"/>
+    <polyline class="power cable-230v-16a" points="34.5 20.5, 34.5 21.7, 35.5 21.7"/>
+
+    <!-- 16A til rader -->
+    <polyline class="power cable-3x-230v-16a" points="23.25 27.2, 23.25 31.8"/>
+    <polyline class="power cable-3x-230v-16a" points="26.75 27.2, 26.75 31.8"/>
+    <polyline class="power cable-3x-230v-16a" points="23.25 36, 23.25 40.6"/>
+    <polyline class="power cable-3x-230v-16a" points="26.75 36, 26.75 40.6"/>
+    <!-- One row only, I can't be bothered to draw all -->
+    <polyline class="power cable-230v-16a" points="23 26.45, 5 26.45"/>
+    <polyline class="power cable-230v-16a" points="23 26.70, 11 26.70"/>
+    <polyline class="power cable-230v-16a" points="23 26.95, 18 26.95"/>
+
+    <!-- 16A to server room -->
+    <polyline class="power cable-3x-230v-16a" points="26.25 45.5, 26.25 45, 24.5 45, 24.5 47, 27 47"/>
+
+    <!-- 16A to distro switches (from server room UPS) -->
+    <polyline class="power cable-3x-230v-16a" points="27 47.5, 24 47.5, 24 44.5, 26 44.5, 26 40.5"/>
+    <polyline class="power cable-230v-16a" points="26 40.5, 26 31.5"/>
+    <polyline class="power cable-230v-16a" points="26 40.5, 24 40.5, 24 31.5"/>
+
 </svg>
