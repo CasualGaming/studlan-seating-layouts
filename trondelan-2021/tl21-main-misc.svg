@@ -903,18 +903,12 @@
     </style>
 
     <!-- Legend -->
-    <g transform="translate(34, 46)">
+    <g transform="translate(32, 46)">
         <!-- Kabel, 3-fase, 400V, 63A -->
-        <text x="0.5" y="0.0" class="legend">Kabel</text>
-        <text x="0.5" y="0.5" class="legend">3P</text>
-        <text x="0.5" y="1.0" class="legend">400V</text>
-        <text x="0.5" y="1.5" class="legend">63A</text>
+        <text x="0.5" y="1.5" class="legend">Kabelgate</text>
         <polyline class="misc cable-tray" points="0 2.25, 1 2.25"/>
         <!-- Kabel, 1-fase, 230V, 16A -->
-        <text x="3.5" y="0.0" class="legend">Kabel</text>
-        <text x="3.5" y="0.5" class="legend">1P</text>
-        <text x="3.5" y="1.0" class="legend">230V</text>
-        <text x="3.5" y="1.5" class="legend">16A</text>
+        <text x="3.5" y="1.5" class="legend">Gjerde</text>
         <polyline class="misc fence" points="3 2.25, 4 2.25"/>
     </g>
 
@@ -922,8 +916,31 @@
     <g transform="translate(5, 4.25)"><text class="area-text align-left">TL21: Diverse</text></g>
 
     <!-- Kabelgater -->
+    <polyline class="misc cable-tray" points="25 1, 25 17"/>
     <polyline class="misc cable-tray" points="23.25 20, 23.25 41"/>
-    <polyline class="misc cable-tray" points="26.75 20, 26.75 46"/>
-    <polyline class="misc cable-tray" points="26.75 46"/>
+    <polyline class="misc cable-tray" points="26.75 20, 26.75 45.5, 24.5 45.5, 24.5 47, 27 47"/>
+    <polyline class="misc cable-tray" points="26.75 41, 23.25 41"/>
+    <polyline class="misc cable-tray" points="15.5 21, 17.5 21"/>
+    <polyline class="misc cable-tray" points="32.5 21, 34.5 21"/>
+    <polyline class="misc cable-tray" points="17.5 18, 17.5 17"/>
+    <polyline class="misc cable-tray" points="32.5 18, 32.5 17"/>
+
+    <!-- Gjerder ved soveområde -->
+    <polyline class="misc fence" points="4 3, 4 5.5"/>
+    <polyline class="misc fence" points="4 6.5, 4 9"/>
+    <polyline class="misc fence" points="4 10, 4 12.5"/>
+    <polyline class="misc fence" points="4 13.5, 4 16"/>
+    <polyline class="misc fence" points="46 3, 46 5.5"/>
+    <polyline class="misc fence" points="46 6.5, 46 9"/>
+    <polyline class="misc fence" points="46 10, 46 12.5"/>
+    <polyline class="misc fence" points="46 13.5, 46 16"/>
+
+    <!-- Gjerder ved crewområde -->
+    <polyline class="misc fence" points="4 16.5, 4 19"/>
+    <polyline class="misc fence" points="4 20, 4 22.5"/>
+    <polyline class="misc fence" points="4 23.5, 15.6 23.5"/>
+    <polyline class="misc fence" points="46 16.5, 46 19"/>
+    <polyline class="misc fence" points="46 20, 46 22.5"/>
+    <polyline class="misc fence" points="46 23.5, 34.4 23.5"/>
 
 </svg>
