@@ -17,6 +17,14 @@
             alignment-baseline: middle;
         }
 
+        text.align-left {
+            text-anchor: start;
+        }
+
+        text.align-right {
+            text-anchor: end;
+        }
+
         .grid {
             /* DEBUG: Grid lines */
             /*display: none;*/
@@ -40,6 +48,10 @@
 
         .area-title {
             font-size: 1.2px;
+        }
+
+        .area-text {
+            font-size: 1px;
         }
 
         .sleeping-row-area {
@@ -229,31 +241,31 @@
             <!-- Top wall -->
             <line x1="0" x2="48" y1="0" y2="0"/>
             <line x1="3" x2="45" y1="2" y2="2" class="zone-wall"/>
-            <g transform="translate(24.0, 1)"><text font-size="1">Vei</text></g>
+            <g transform="translate(24.0, 1)"><text class="area-text">Vei</text></g>
             <!-- Partition walls -->
             <line x1="3" x2="45" y1="15.5" y2="15.5" class="partition-wall"/>
             <!-- Left wall -->
             <line x1="0" x2="0" y1="0" y2="4"/>
-            <g transform="translate(1, 5) rotate(270)"><text font-size="1">Nødutgang</text></g>
+            <g transform="translate(1, 5) rotate(270)"><text class="area-text">Nødutgang</text></g>
             <line x1="0" x2="0" y1="6" y2="41"/>
-            <g transform="translate(1, 42) rotate(270)"><text font-size="1">Nødutgang</text></g>
+            <g transform="translate(1, 42) rotate(270)"><text class="area-text">Nødutgang</text></g>
             <line x1="0" x2="0" y1="43" y2="48"/>
             <line x1="3" x2="3" y1="2" y2="42" class="zone-wall"/>
-            <g transform="translate(1.5, 22) rotate(270)"><text font-size="1">Rømningsvei</text></g>
+            <g transform="translate(1.5, 22) rotate(270)"><text class="area-text">Rømningsvei</text></g>
             <!-- Right wall -->
             <line x1="48" x2="48" y1="0" y2="4"/>
-            <g transform="translate(47, 5) rotate(90)"><text font-size="1">Nødutgang (port)</text></g>
+            <g transform="translate(47, 5) rotate(90)"><text class="area-text">Nødutgang (port)</text></g>
             <line x1="48" x2="48" y1="7" y2="41"/>
-            <g transform="translate(47, 42) rotate(90)"><text font-size="1">Nødutgang</text></g>
+            <g transform="translate(47, 42) rotate(90)"><text class="area-text">Nødutgang</text></g>
             <line x1="48" x2="48" y1="43" y2="48"/>
             <line x1="45" x2="45" y1="2" y2="42" class="zone-wall"/>
-            <g transform="translate(46.5, 22) rotate(90)"><text font-size="1">Rømningsvei</text></g>
+            <g transform="translate(46.5, 22) rotate(90)"><text class="area-text">Rømningsvei</text></g>
             <!-- Bottom walls -->
             <line x1="0" x2="3" y1="48" y2="48"/>
             <line x1="3" x2="3" y1="44" y2="48"/>
             <line x1="3" x2="21" y1="44" y2="44"/>
             <line x1="21" x2="21" y1="44" y2="48"/>
-            <g transform="translate(22.5, 46) rotate(270)"><text font-size="1">Inngang</text></g>
+            <g transform="translate(22.5, 46) rotate(270)"><text class="area-text">Inngang</text></g>
             <line x1="24" x2="24" y1="45" y2="48"/>
             <line x1="24" x2="27" y1="45" y2="45"/>
             <line x1="24" x2="27" y1="48" y2="48"/>
