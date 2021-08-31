@@ -936,6 +936,7 @@
     <polyline class="misc fence" points="46 13.5, 46 16"/>
 
     <!-- Gjerder ved crewområde -->
+    <polyline class="misc fence" points="23.75 16.5, 26.25 16.5"/>
     <polyline class="misc fence" points="4 16.5, 4 19"/>
     <polyline class="misc fence" points="4 20, 4 22.5"/>
     <polyline class="misc fence" points="4 23.5, 15.6 23.5"/>
