@@ -883,160 +883,67 @@
             font-size: 0.5px;
         }
 
-        rect.tele {
+        rect.misc {
             stroke: #666;
             stroke-width: 0.05px;
         }
 
-        polyline.tele {
+        polyline.misc {
             stroke-width: 0.2px;
             fill: none;
         }
 
-        rect.switch-core {
-            fill: purple;
-        }
-
-        rect.switch-distro {
-            fill: red;
-        }
-
-        rect.switch-access {
-            fill: orange;
-        }
-
-        rect.access-point {
-            fill: green;
-        }
-
-        polyline.cable-fiber-10g {
+        polyline.cable-tray {
             stroke: red;
         }
 
-        polyline.cable-tp-1g-bundle {
-            stroke: purple;
-        }
-
-        polyline.cable-tp-1g {
+        polyline.fence {
             stroke: blue;
-        }
-
-        polyline.cable-tp-1g-poe {
-            stroke: green;
         }
     </style>
 
     <!-- Legend -->
-    <g transform="translate(8, 46)">
-        <!-- Core switch -->
-        <text x="0.5" y="1.0" class="legend">Core</text>
-        <text x="0.5" y="1.5" class="legend">switch</text>
-        <rect x="0" y="2" width="1" height="0.5" class="tele switch-core"/>
-        <!-- Distro switch -->
-        <text x="3.5" y="1.0" class="legend">Distro</text>
-        <text x="3.5" y="1.5" class="legend">switch</text>
-        <rect x="3" y="2" width="1" height="0.5" class="tele switch-distro"/>
-        <!-- Access switch -->
-        <text x="6.5" y="1.0" class="legend">Access</text>
-        <text x="6.5" y="1.5" class="legend">switch</text>
-        <rect x="6" y="2" width="1" height="0.5" class="tele switch-access"/>
-        <!-- Access point -->
-        <text x="9.5" y="1.0" class="legend">Access</text>
-        <text x="9.5" y="1.5" class="legend">point</text>
-        <rect x="9" y="2" width="1" height="0.5" class="tele access-point"/>
-    </g>
     <g transform="translate(32, 46)">
-        <!-- Kabel, fiber, 10G, 1-2x -->
-        <text x="0.5" y="0.5" class="legend">Kabel (1-2x)</text>
-        <text x="0.5" y="1.0" class="legend">Fiber</text>
-        <text x="0.5" y="1.5" class="legend">10G</text>
-        <polyline class="tele cable-fiber-10g" points="0 2.25, 1 2.25"/>
-        <!-- Kabel, TP, 1G, 2x -->
-        <text x="3.5" y="0.5" class="legend">Kabel</text>
-        <text x="3.5" y="1.0" class="legend">TP, bundle</text>
-        <text x="3.5" y="1.5" class="legend">1G</text>
-        <polyline class="tele cable-tp-1g-bundle" points="3 2.25, 4 2.25"/>
-        <!-- Kabel, TP, 1G -->
-        <text x="6.5" y="0.5" class="legend">Kabel (1-2x)</text>
-        <text x="6.5" y="1.0" class="legend">TP</text>
-        <text x="6.5" y="1.5" class="legend">1G</text>
-        <polyline class="tele cable-tp-1g" points="6 2.25, 7 2.25"/>
-        <!-- Kabel, TP, 1G, PoE -->
-        <text x="9.5" y="0.5" class="legend">Kabel</text>
-        <text x="9.5" y="1.0" class="legend">TP, PoE</text>
-        <text x="9.5" y="1.5" class="legend">1G</text>
-        <polyline class="tele cable-tp-1g-poe" points="9 2.25, 10 2.25"/>
+        <!-- Kabel, 3-fase, 400V, 63A -->
+        <text x="0.5" y="1.5" class="legend">Kabelgate</text>
+        <polyline class="misc cable-tray" points="0 2.25, 1 2.25"/>
+        <!-- Kabel, 1-fase, 230V, 16A -->
+        <text x="3.5" y="1.5" class="legend">Gjerde</text>
+        <polyline class="misc fence" points="3 2.25, 4 2.25"/>
     </g>
 
     <!-- Special -->
-    <g transform="translate(5, 4.25)"><text class="area-text align-left">TL21: Datanett</text></g>
-    <g transform="translate(5, 11.25)"><text class="area-text align-left">Merk: Kartet viser ikke core-rom, tele-rom eller sørbygg.</text></g>
+    <g transform="translate(5, 4.25)"><text class="area-text align-left">TL21: Diverse</text></g>
 
-    <!-- Core and distros -->
-    <rect x="27" y="46.5" width="0.5" height="1" class="tele switch-core"/>
-    <rect x="23" y="31" width="0.5" height="1" class="tele switch-distro"/>
-    <rect x="26.5" y="31" width="0.5" height="1" class="tele switch-distro"/>
-    <polyline class="tele cable-fiber-10g" points="27 47.25, 24.25 47.25, 24.25 45.25, 25.5 45.25, 25.5 41, 24 41, 24 31.5, 23.5 31.5"/>
-    <polyline class="tele cable-fiber-10g" points="27 46.75, 24.75 46.75, 24.75 45.75, 26 45.75, 26 31.5, 26.5 31.5"/>
+    <!-- Kabelgater -->
+    <polyline class="misc cable-tray" points="25 1, 25 17"/>
+    <polyline class="misc cable-tray" points="23.25 20, 23.25 41"/>
+    <polyline class="misc cable-tray" points="26.75 20, 26.75 45.5, 24.5 45.5, 24.5 47, 27 47"/>
+    <polyline class="misc cable-tray" points="26.75 41, 23.25 41"/>
+    <polyline class="misc cable-tray" points="15.5 21, 17.5 21"/>
+    <polyline class="misc cable-tray" points="32.5 21, 34.5 21"/>
+    <polyline class="misc cable-tray" points="17.5 18, 17.5 17"/>
+    <polyline class="misc cable-tray" points="32.5 18, 32.5 17"/>
 
-    <!-- Access switche cable bundle -->
-    <polyline class="tele cable-tp-1g-bundle" points="23.25 21, 23.25 41.1"/>
-    <polyline class="tele cable-tp-1g-bundle" points="26.75 21, 26.75 41.1"/>
+    <!-- Gjerder ved soveområde -->
+    <polyline class="misc fence" points="4 3, 4 5.5"/>
+    <polyline class="misc fence" points="4 6.5, 4 9"/>
+    <polyline class="misc fence" points="4 10, 4 12.5"/>
+    <polyline class="misc fence" points="4 13.5, 4 16"/>
+    <polyline class="misc fence" points="46 3, 46 5.5"/>
+    <polyline class="misc fence" points="46 6.5, 46 9"/>
+    <polyline class="misc fence" points="46 10, 46 12.5"/>
+    <polyline class="misc fence" points="46 13.5, 46 16"/>
 
-    <!-- Stage access switch -->
-    <rect x="24.5" y="18.5" width="1" height="0.5" class="tele switch-access"/>
-    <polyline class="tele cable-tp-1g" points="26.75 21, 25 21, 25 19"/>
+    <!-- Gjerder ved crewområde -->
+    <polyline class="misc fence" points="4 16.5, 4 19"/>
+    <polyline class="misc fence" points="4 20, 4 22.5"/>
+    <polyline class="misc fence" points="4 23.5, 15.6 23.5"/>
+    <polyline class="misc fence" points="46 16.5, 46 19"/>
+    <polyline class="misc fence" points="46 20, 46 22.5"/>
+    <polyline class="misc fence" points="46 23.5, 34.4 23.5"/>
 
-    <!-- Crew access switches -->
-    <rect x="35" y="20.6" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="14.5" y="20.6" width="0.5" height="1" class="tele switch-access"/>
-    <polyline class="tele cable-tp-1g" points="23.25 21.1, 15 21.1"/>
-    <polyline class="tele cable-tp-1g" points="26.75 21.1, 35 21.1"/>
-
-    <!-- Left participant access switches -->
-    <rect x="4.6" y="26.2" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="4.6" y="31" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="4.6" y="35.8" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="4.6" y="40.6" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="22.5" y="26.2" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="22.5" y="31" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="22.5" y="35.8" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="22.5" y="40.6" width="0.5" height="1" class="tele switch-access"/>
-    <polyline class="tele cable-tp-1g" points="23.25 26.45, 22.75 26.45"/>
-    <polyline class="tele cable-tp-1g" points="23.25 26.95, 5.1 26.95"/>
-    <polyline class="tele cable-tp-1g" points="23.25 31.25, 22.75 31.25"/>
-    <polyline class="tele cable-tp-1g" points="23.25 31.75, 5.1 31.75"/>
-    <polyline class="tele cable-tp-1g" points="23.25 36.05, 22.75 36.05"/>
-    <polyline class="tele cable-tp-1g" points="23.25 36.55, 5.1 36.55"/>
-    <polyline class="tele cable-tp-1g" points="23.25 40.85, 22.75 40.85"/>
-    <polyline class="tele cable-tp-1g" points="23.25 41.35, 5.1 41.35"/>
-
-    <!-- Right participant access switches -->
-    <rect x="27" y="26.2" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="27" y="31" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="27" y="35.8" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="27" y="40.6" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="44.9" y="26.2" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="44.9" y="31" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="44.9" y="35.8" width="0.5" height="1" class="tele switch-access"/>
-    <rect x="44.9" y="40.6" width="0.5" height="1" class="tele switch-access"/>
-    <polyline class="tele cable-tp-1g" points="26.75 26.45, 27.25 26.45"/>
-    <polyline class="tele cable-tp-1g" points="26.75 26.95, 44.9 26.95"/>
-    <polyline class="tele cable-tp-1g" points="26.75 31.25, 27.25 31.25"/>
-    <polyline class="tele cable-tp-1g" points="26.75 31.75, 44.9 31.75"/>
-    <polyline class="tele cable-tp-1g" points="26.75 36.05, 27.25 36.05"/>
-    <polyline class="tele cable-tp-1g" points="26.75 36.55, 44.9 36.55"/>
-    <polyline class="tele cable-tp-1g" points="26.75 40.85, 27.25 40.85"/>
-    <polyline class="tele cable-tp-1g" points="26.75 41.35, 44.9 41.35"/>
-
-    <!-- Access points -->
-    <rect x="4.1" y="20.6" width="0.5" height="1" class="tele access-point"/>
-    <rect x="45.4" y="20.6" width="0.5" height="1" class="tele access-point"/>
-    <rect x="4.1" y="35.8" width="0.5" height="1" class="tele access-point"/>
-    <rect x="45.4" y="35.8" width="0.5" height="1" class="tele access-point"/>
-    <polyline class="tele cable-tp-1g-poe" points="23.25 21.35, 4.6 21.35"/>
-    <polyline class="tele cable-tp-1g-poe" points="26.75 21.35, 45.4 21.35"/>
-    <polyline class="tele cable-tp-1g-poe" points="23.25 36.3, 4.6 36.3"/>
-    <polyline class="tele cable-tp-1g-poe" points="26.75 36.3, 45.4 36.3"/>
-
+    <!-- Gjerder diverse -->
+    <polyline class="misc fence" points="23.75 16.5, 26.25 16.5"/>
+    <polyline class="misc fence" points="28 43.5, 28 46"/>
 </svg>
