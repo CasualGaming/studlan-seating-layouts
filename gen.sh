@@ -75,7 +75,10 @@ for input_dir in "$@"; do
         cat < "$input_file" > "$tmp_file"
         sed -i 's/xlink://g' "$tmp_file"
 
-        # Generate
+        # Generate PDF
+        cairosvg "$tmp_file" -o "$output_base_file.pdf" -f pdf
+
+        # Generate PNG
         cairosvg "$tmp_file" -o "$output_base_file.png" -f png --output-width "$png_width" --output-height "$png_height"
     done
 done
