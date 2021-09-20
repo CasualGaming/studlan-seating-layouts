@@ -112,12 +112,14 @@
 
         /* Dynamic studlan styling: Clicked seat */
         rect.seating-node-info {
+            stroke-width: 0.1px;
             fill: #0275d8;
         }
 
         /* Dynamic studlan styling: Hyperlinked seat */
         rect.seating-node-search {
             fill: #5bc0de;
+            stroke-width: 0.1px;
         }
     </style>
 
