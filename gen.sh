@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Convert one or more SVG to PNGs.
-
-# Dependencies: caurosvg
+# Dependencies: cairosvg
+# Example usage: ./gen.sh trondelan-2021
 
 set -eu
 
@@ -37,7 +37,7 @@ for input_dir in "$@"; do
         fi
 
         echo
-        echo "Converting: $input_file -> $output_base_file-xxx"
+        echo "Converting: $input_file"
 
         # Figure out dims
         # Example: viewBox="-0.080299786 0 1000.101 1116"
