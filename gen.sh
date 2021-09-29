@@ -3,16 +3,15 @@
 # Convert one or more SVG to PNGs and PDFs.
 # Will recursively find all SVG files in the specified dir or file and
 # convert them to PNGs and PDFs in a new "export" dir in the same dir as the SVG file.
+# Make sure the provided paths don't overlap.
+
 # Dependencies: cairosvg
 # Usage: ./gen.sh <input-dirs-or-files>
 # Example usage: ./gen.sh trondelan-2021
 
 set -eu
 
-tmp_file="$(mktemp)"
-png_width=8000
-
-trap "rm $tmp_file" EXIT
+export png_width=8000
 
 if (( $# < 1 )); then
     echo "Usage: $0 <input-dirs-or-files ...>" 2>&1
@@ -20,10 +19,9 @@ if (( $# < 1 )); then
     exit 1
 fi
 
-if ! command -v cairosvg &> /dev/null; then
-    echo "cairosvg not found, please install it." >&2
-    exit 1
-fi
+# Check if required commands are present
+command -v parallel &> /dev/null || echo "parallel not found, please install it." >&2 && exit 1
+command -v cairosvg &> /dev/null || echo "cairosvg not found, please install it." >&2 && exit 1
 
 # Process a single SVG file
 # Arg 1: Full file path
@@ -34,10 +32,16 @@ function gen_file {
     input_dir="$(dirname "$input_file")"
     export_dir="$input_dir/export"
 
+    echo "Converting file: $input_file"
+
     if [[ ! -f $input_file ]]; then
         echo "Input file isn't a file, skipping: $input_file" 2>&1
         continue
     fi
+
+    # Setup tmp-file for temporary processing later
+    tmp_file="$(mktemp)"
+    trap "rm $tmp_file" EXIT
 
     # Figure out dims
     # Example: viewBox="-0.080299786 0 1000.101 1116"
@@ -81,27 +85,24 @@ function gen_file {
     # Generate PNG
     cairosvg "$tmp_file" -o "$export_dir/$file_basename.png" -f png --output-width "$png_width" --output-height "$png_height"
 }
+export -f gen_file
 
+# Delete old exports
 for input_element in "$@"; do
-    # if [[ ! -d $input_dir ]]; then
-    #     echo "Input dir isn't a dir, skipping: $input_dir" 2>&1
-    #     continue
-    # fi
-    # output_dir="$input_dir/export"
-    # if [[ -e $output_dir ]]; then
-    #     rm -rf "$output_dir"
-    # fi
-    # mkdir -p "$output_dir"
-    
-    # Delete old exports
     for export_dir in $(find "$input_element" -type d -name 'export'); do
         echo "Deleting old export dir: $export_dir"
     done
+done
 
-    # Process files
+
+# Create new export dirs and record input files
+declare -a input_files
+for input_element in "$@"; do
     for input_file in $(find "$input_element" -type f -name '*.svg'); do
+        input_files+=("$input_file")
         mkdir -p "$(dirname "$input_file")/export"
-        echo "Converting file: $input_file"
-        gen_file "$input_file"
     done
 done
+
+# Process files in parallel
+parallel gen_file ::: "${input_files[@]}"
