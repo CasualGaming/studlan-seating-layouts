@@ -20,8 +20,8 @@ if (( $# < 1 )); then
 fi
 
 # Check if required commands are present
-command -v parallel &> /dev/null || echo "parallel not found, please install it." >&2 && exit 1
-command -v cairosvg &> /dev/null || echo "cairosvg not found, please install it." >&2 && exit 1
+command -v parallel &> /dev/null || (echo "parallel not found, please install it." >&2 ; exit 1)
+command -v cairosvg &> /dev/null || (echo "cairosvg not found, please install it." >&2 ; exit 1)
 
 # Process a single SVG file
 # Arg 1: Full file path

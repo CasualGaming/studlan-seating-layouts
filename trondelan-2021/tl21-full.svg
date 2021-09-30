@@ -328,52 +328,52 @@
             <g class="seating-row" transform="translate(0, 3)">
                 <!-- Area and title -->
                 <rect x="0" y="0" width="11.6" height="6.5" class="crew-seating-row-area"/>
-                <text x="5.8" y="2" class="area-title">Crew</text>
+                <text x="5.8" y="2" class="area-title">Stand</text>
                 <!-- Tables (single row) -->
                 <g transform="translate(0.6, 0.9)">
                     <rect x="0.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="0.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="0.8" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="1.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="2.4" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="2.4" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="3.2" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="4.0" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="4.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="4.8" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="5.6" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="5.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="6.4" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="7.2" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="7.2" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="8.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="8.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="8.8" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="9.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                 </g>
                 <!-- Tables (double row) -->
                 <g transform="translate(0.6, 4.1)">
                     <rect x="-0.6" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
-                    <rect x="0.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="0.0" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="0.0" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="0.0" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="0.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="0.8" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="1.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="1.6" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="1.6" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="1.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="2.4" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="2.4" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="3.2" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="3.2" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="3.2" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="3.2" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="4.0" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="4.0" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="4.8" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="4.8" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="4.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="4.8" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="5.6" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="5.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="6.4" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="6.4" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="6.4" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="6.4" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="7.2" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="7.2" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="8.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="8.0" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="8.0" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="8.0" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="8.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="8.8" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="9.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="9.6" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="9.6" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="9.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <rect x="10.4" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
                 </g>
             </g>
@@ -388,48 +388,48 @@
                 <!-- Tables (single row) -->
                 <g transform="translate(0.6, 0.9)">
                     <rect x="0.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="0.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="0.8" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="1.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="2.4" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="2.4" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="3.2" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="4.0" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="4.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="4.8" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="5.6" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="5.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="6.4" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="7.2" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="7.2" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="8.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <a class="seat" href="#"><rect x="8.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <rect x="8.8" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                     <rect x="9.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
                 </g>
                 <!-- Tables (double row) -->
                 <g transform="translate(0.6, 4.1)">
                     <rect x="-0.6" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
-                    <rect x="0.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="0.0" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="0.0" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="0.0" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="0.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="0.8" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="1.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="1.6" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="1.6" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="1.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="2.4" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="2.4" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="3.2" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="3.2" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="3.2" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="3.2" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="4.0" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="4.0" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="4.8" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="4.8" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="4.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="4.8" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="5.6" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="5.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="6.4" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="6.4" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="6.4" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="6.4" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="7.2" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="7.2" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="8.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="8.0" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="8.0" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="8.0" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="8.8" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
                     <a class="seat" href="#"><rect x="8.8" y="0.3" width="0.8" height="0.6" class="seat"/></a>
-                    <rect x="9.6" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
-                    <rect x="9.6" y="0.3" width="0.8" height="0.6" class="seat spacer-seat"/>
+                    <a class="seat" href="#"><rect x="9.6" y="-0.9" width="0.8" height="0.6" class="seat"/></a>
+                    <a class="seat" href="#"><rect x="9.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                     <rect x="10.4" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
                 </g>
             </g>
@@ -875,80 +875,4 @@
             </g>
         </g>
     </g>
-
-    <!-- CUSTOM STUFF BELOW -->
-
-    <style type="text/css">
-        /* Hide area titles, they get in the way */
-        .area-title {
-            display: none;
-        }
-
-        text.legend {
-            font-size: 0.5px;
-        }
-
-        rect.misc {
-            stroke: #666;
-            stroke-width: 0.05px;
-        }
-
-        polyline.misc {
-            stroke-width: 0.2px;
-            fill: none;
-        }
-
-        polyline.cable-tray {
-            stroke: red;
-        }
-
-        polyline.fence {
-            stroke: blue;
-        }
-    </style>
-
-    <!-- Legend -->
-    <g transform="translate(32, 46)">
-        <!-- Kabel, 3-fase, 400V, 63A -->
-        <text x="0.5" y="1.5" class="legend">Kabelgate</text>
-        <polyline class="misc cable-tray" points="0 2.25, 1 2.25"/>
-        <!-- Kabel, 1-fase, 230V, 16A -->
-        <text x="3.5" y="1.5" class="legend">Gjerde</text>
-        <polyline class="misc fence" points="3 2.25, 4 2.25"/>
-    </g>
-
-    <!-- Special -->
-    <g transform="translate(5, 4.25)"><text class="area-text align-left">TL21: Diverse</text></g>
-
-    <!-- Kabelgater -->
-    <polyline class="misc cable-tray" points="25 1, 25 17"/>
-    <polyline class="misc cable-tray" points="23.25 20, 23.25 41"/>
-    <polyline class="misc cable-tray" points="26.75 20, 26.75 45.5, 24.5 45.5, 24.5 47, 27 47"/>
-    <polyline class="misc cable-tray" points="26.75 41, 23.25 41"/>
-    <polyline class="misc cable-tray" points="15.5 21, 17.5 21"/>
-    <polyline class="misc cable-tray" points="32.5 21, 34.5 21"/>
-    <polyline class="misc cable-tray" points="17.5 18, 17.5 17"/>
-    <polyline class="misc cable-tray" points="32.5 18, 32.5 17"/>
-
-    <!-- Gjerder ved soveområde -->
-    <polyline class="misc fence" points="4 3, 4 5.5"/>
-    <polyline class="misc fence" points="4 6.5, 4 9"/>
-    <polyline class="misc fence" points="4 10, 4 12.5"/>
-    <polyline class="misc fence" points="4 13.5, 4 16"/>
-    <polyline class="misc fence" points="46 3, 46 5.5"/>
-    <polyline class="misc fence" points="46 6.5, 46 9"/>
-    <polyline class="misc fence" points="46 10, 46 12.5"/>
-    <polyline class="misc fence" points="46 13.5, 46 16"/>
-
-    <!-- Gjerder ved crewområde -->
-    <polyline class="misc fence" points="4 16.5, 4 19"/>
-    <polyline class="misc fence" points="4 20, 4 22.5"/>
-    <polyline class="misc fence" points="4 23.5, 15.6 23.5"/>
-    <polyline class="misc fence" points="46 16.5, 46 19"/>
-    <polyline class="misc fence" points="46 20, 46 22.5"/>
-    <polyline class="misc fence" points="46 23.5, 34.4 23.5"/>
-
-    <!-- Gjerder diverse -->
-    <polyline class="misc fence" points="23.75 16.5, 26.25 16.5"/>
-    <polyline class="misc fence" points="28 43.5, 28 46"/>
 </svg>
