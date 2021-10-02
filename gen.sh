@@ -23,6 +23,8 @@ fi
 command -v parallel &> /dev/null || (echo "parallel not found, please install it." >&2 ; exit 1)
 command -v cairosvg &> /dev/null || (echo "cairosvg not found, please install it." >&2 ; exit 1)
 
+echo "(If no files are getting converted, you may be using the wrong variant of parallel.)"
+
 # Process a single SVG file
 # Arg 1: Full file path
 function gen_file {
@@ -91,9 +93,9 @@ export -f gen_file
 for input_element in "$@"; do
     for export_dir in $(find "$input_element" -type d -name 'export'); do
         echo "Deleting old export dir: $export_dir"
+        rm -rf "$export_dir"
     done
 done
-
 
 # Create new export dirs and record input files
 declare -a input_files
@@ -106,3 +108,5 @@ done
 
 # Process files in parallel
 parallel gen_file ::: "${input_files[@]}"
+
+echo "Done!"
