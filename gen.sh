@@ -5,7 +5,7 @@
 # convert them to PNGs and PDFs in a new "export" dir in the same dir as the SVG file.
 # Make sure the provided paths don't overlap.
 
-# Dependencies: cairosvg
+# Dependencies: bc parallel [python-]cairosvg
 # Usage: ./gen.sh <input-dirs-or-files>
 # Example usage: ./gen.sh trondelan-2021
 
@@ -20,6 +20,7 @@ if (( $# < 1 )); then
 fi
 
 # Check if required commands are present
+command -v bc &> /dev/null || (echo "bc not found, please install it." >&2 ; exit 1)
 command -v parallel &> /dev/null || (echo "parallel not found, please install it." >&2 ; exit 1)
 command -v cairosvg &> /dev/null || (echo "cairosvg not found, please install it." >&2 ; exit 1)
 
