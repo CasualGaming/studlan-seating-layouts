@@ -314,23 +314,30 @@
         </g>
 
         <!-- Southwest open area -->
-        <g transform="translate(3, 35)">
+        <g transform="translate(3, 32)">
             <!-- Area and title -->
-            <rect x="0" y="0" width="18" height="7" class="misc-area"/>
-            <text x="9" y="3.5" class="area-title">Stand</text>
+            <rect x="0" y="0" width="18" height="10" class="misc-area"/>
+            <text x="9" y="5" class="area-title">Smash</text>
         </g>
 
         <!-- Southeast outer open area -->
-        <g transform="translate(27, 35)">
+        <g transform="translate(27, 32)">
             <!-- Area and title -->
-            <rect x="0" y="0" width="18" height="7" class="misc-area"/>
-            <text x="9" y="3.5" class="area-title">Smash</text>
+            <rect x="0" y="0" width="4" height="10" class="misc-area"/>
+            <text x="2" y="5" class="area-title">Stand</text>
+        </g>
+
+        <!-- Southeast outer open area -->
+        <g transform="translate(32, 32)">
+            <!-- Area and title -->
+            <rect x="0" y="0" width="13" height="10" class="misc-area"/>
+            <text x="6.5" y="5" class="area-title">Soveområde</text>
         </g>
 
         <!-- Left participant seats -->
-        <g class="participant-seats" transform="translate(3, 11)">
+        <g class="participant-seats" transform="translate(3, 10)">
             <!-- Area -->
-            <polyline points="0,-3 0,22 20,22 20,3 14,-3 0,-3" class="participant-area"/>
+            <polyline points="0,-3 0,21 20,21 20,3 14,-3 0,-3" class="participant-area"/>
             <!-- Rows -->
             <g class="seating-row" transform="translate(0.6, 0)">
                 <!-- Area and title -->
@@ -356,7 +363,7 @@
                 <a class="seat" href="#"><rect x="10.5" y="0.3" width="1.5" height="0.6" class="seat"/></a>
                 <rect x="12.0" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
             </g>
-            <g class="seating-row" transform="translate(0.6, 5)">
+            <g class="seating-row" transform="translate(0.6, 4.5)">
                 <!-- Area and title -->
                 <text x="9.4" y="-1.6" class="area-title">Rad V2</text>
                 <!-- Tables -->
@@ -409,7 +416,7 @@
                 <a class="seat" href="#"><rect x="17.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                 <rect x="18.4" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
             </g>
-            <g class="seating-row" transform="translate(0.6, 10)">
+            <g class="seating-row" transform="translate(0.6, 9)">
                 <!-- Area and title -->
                 <text x="9.4" y="-1.6" class="area-title">Rad V3</text>
                 <!-- Tables -->
@@ -462,7 +469,7 @@
                 <a class="seat" href="#"><rect x="17.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                 <rect x="18.4" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
             </g>
-            <g class="seating-row" transform="translate(0.6, 15)">
+            <g class="seating-row" transform="translate(0.6, 13.5)">
                 <!-- Area and title -->
                 <text x="9.4" y="-1.6" class="area-title">Rad V4</text>
                 <!-- Tables -->
@@ -515,7 +522,7 @@
                 <a class="seat" href="#"><rect x="17.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                 <rect x="18.4" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
             </g>
-            <g class="seating-row" transform="translate(0.6, 20)">
+            <g class="seating-row" transform="translate(0.6, 18)">
                 <!-- Area and title -->
                 <text x="9.4" y="-1.6" class="area-title">Rad V5</text>
                 <!-- Tables -->
@@ -571,9 +578,9 @@
         </g>
 
         <!-- Right participant seats -->
-        <g class="participant-seats" transform="translate(26.6, 11)">
+        <g class="participant-seats" transform="translate(26.6, 10)">
             <!-- Area -->
-            <polyline points="-1.6,3 -1.6,22 18.4,22 18.4,-3 4.4,-3 -1.6,3" class="participant-area"/>
+            <polyline points="-1.6,3 -1.6,21 18.4,21 18.4,-3 4.4,-3 -1.6,3" class="participant-area"/>
             <!-- Rows -->
             <g class="seating-row" transform="translate(5.8, 0)">
                 <!-- Area and title -->
@@ -599,7 +606,7 @@
                 <a class="seat" href="#"><rect x="10.5" y="0.3" width="1.5" height="0.6" class="seat"/></a>
                 <rect x="12.0" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
             </g>
-            <g class="seating-row" transform="translate(-0.6, 5)">
+            <g class="seating-row" transform="translate(-0.6, 4.5)">
                 <!-- Area and title -->
                 <text x="9.4" y="-1.6" class="area-title">Rad H2</text>
                 <!-- Tables -->
@@ -652,7 +659,7 @@
                 <a class="seat" href="#"><rect x="17.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                 <rect x="18.4" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
             </g>
-            <g class="seating-row" transform="translate(-0.6, 10)">
+            <g class="seating-row" transform="translate(-0.6, 9)">
                 <!-- Area and title -->
                 <text x="9.4" y="-1.6" class="area-title">Rad H3</text>
                 <!-- Tables -->
@@ -705,7 +712,7 @@
                 <a class="seat" href="#"><rect x="17.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                 <rect x="18.4" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
             </g>
-            <g class="seating-row" transform="translate(-0.6, 15)">
+            <g class="seating-row" transform="translate(-0.6, 13.5)">
                 <!-- Area and title -->
                 <text x="9.4" y="-1.6" class="area-title">Rad H4</text>
                 <!-- Tables -->
@@ -758,7 +765,7 @@
                 <a class="seat" href="#"><rect x="17.6" y="0.3" width="0.8" height="0.6" class="seat"/></a>
                 <rect x="18.4" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
             </g>
-            <g class="seating-row" transform="translate(-0.6, 20)">
+            <g class="seating-row" transform="translate(-0.6, 18)">
                 <!-- Area and title -->
                 <text x="9.4" y="-1.6" class="area-title">Rad H5</text>
                 <!-- Tables -->
