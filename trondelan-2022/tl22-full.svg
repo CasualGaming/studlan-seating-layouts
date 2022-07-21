@@ -313,25 +313,39 @@
             <text x="5.5" y="3" class="area-title">Crew (main)</text>
         </g>
 
-        <!-- Southwest open area -->
+        <!-- Southwest Smash area -->
         <g transform="translate(3, 32)">
             <!-- Area and title -->
-            <rect x="0" y="0" width="18" height="10" class="misc-area"/>
-            <text x="9" y="5" class="area-title">Smash</text>
+            <rect x="0" y="0" width="14" height="10" class="misc-area"/>
+            <text x="7" y="5" class="area-title">Smash</text>
         </g>
 
-        <!-- Southeast outer open area -->
+        <!-- Southeast sleeping area -->
+        <g transform="translate(31, 32)">
+            <!-- Area and title -->
+            <rect x="0" y="0" width="14" height="10" class="misc-area"/>
+            <text x="7" y="5" class="area-title">Soveområde</text>
+        </g>
+
+        <!-- Southwest stand area -->
+        <g transform="translate(17.5, 32)">
+            <!-- Area and title -->
+            <rect x="0" y="0" width="3.5" height="10" class="misc-area"/>
+            <text x="1.75" y="5" class="area-title">Stand</text>
+        </g>
+
+        <!-- Southeast stand area -->
         <g transform="translate(27, 32)">
             <!-- Area and title -->
-            <rect x="0" y="0" width="4" height="10" class="misc-area"/>
-            <text x="2" y="5" class="area-title">Stand</text>
+            <rect x="0" y="0" width="3.5" height="10" class="misc-area"/>
+            <text x="1.75" y="5" class="area-title">Stand</text>
         </g>
 
-        <!-- Southeast outer open area -->
-        <g transform="translate(32, 32)">
+        <!-- Dørvakt -->
+        <g transform="translate(24, 43)">
             <!-- Area and title -->
-            <rect x="0" y="0" width="13" height="10" class="misc-area"/>
-            <text x="6.5" y="5" class="area-title">Soveområde</text>
+            <rect x="0" y="0" width="3" height="2" class="crew-area"/>
+            <text x="1.5" y="1" class="area-title">Vakt</text>
         </g>
 
         <!-- Left participant seats -->
