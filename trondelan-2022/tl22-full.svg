@@ -301,49 +301,47 @@
 
         <!-- West crew area -->
         <g transform="translate(3, 0)">
-            <!-- Area and title -->
             <rect x="0" y="0" width="11" height="6" class="crew-area"/>
-            <text x="5.5" y="3" class="area-title">Crew (stream)</text>
+            <text x="5.5" y="3" class="area-title">Crew</text>
         </g>
 
         <!-- East crew area -->
         <g transform="translate(34, 0)">
-            <!-- Area and title -->
             <rect x="0" y="0" width="11" height="6" class="crew-area"/>
-            <text x="5.5" y="3" class="area-title">Crew (main)</text>
+            <text x="5.5" y="3" class="area-title">Crew</text>
+        </g>
+
+        <!-- Front-of-house (FOH) -->
+        <g transform="translate(22, 8)">
+            <rect x="0" y="0" width="4" height="3" class="crew-area"/>
         </g>
 
         <!-- Southwest Smash area -->
         <g transform="translate(3, 32)">
-            <!-- Area and title -->
             <rect x="0" y="0" width="14" height="10" class="misc-area"/>
             <text x="7" y="5" class="area-title">Smash</text>
         </g>
 
         <!-- Southeast sleeping area -->
         <g transform="translate(31, 32)">
-            <!-- Area and title -->
             <rect x="0" y="0" width="14" height="10" class="misc-area"/>
             <text x="7" y="5" class="area-title">Soveområde</text>
         </g>
 
         <!-- Southwest stand area -->
         <g transform="translate(17.5, 32)">
-            <!-- Area and title -->
             <rect x="0" y="0" width="3.5" height="10" class="misc-area"/>
             <text x="1.75" y="5" class="area-title">Stand</text>
         </g>
 
         <!-- Southeast stand area -->
         <g transform="translate(27, 32)">
-            <!-- Area and title -->
             <rect x="0" y="0" width="3.5" height="10" class="misc-area"/>
             <text x="1.75" y="5" class="area-title">Stand</text>
         </g>
 
         <!-- Dørvakt -->
         <g transform="translate(24, 43)">
-            <!-- Area and title -->
             <rect x="0" y="0" width="3" height="2" class="crew-area"/>
             <text x="1.5" y="1" class="area-title">Vakt</text>
         </g>
@@ -356,7 +354,7 @@
             <g class="seating-row" transform="translate(0.6, 0)">
                 <!-- Area and title -->
                 <!-- <text x="9.4" y="-1.6" class="area-title">Rad V1 (VIP)</text> -->
-                <text x="7" y="-1.6" class="area-title">Rad V1 (VIP)</text>
+                <text x="6" y="-1.6" class="area-title">Rad V1 (VIP)</text>
                 <!-- Tables -->
                 <rect x="-0.6" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <a class="seat" href="#"><rect x="0.0" y="-0.9" width="1.5" height="0.6" class="seat"/></a>
@@ -599,7 +597,7 @@
             <g class="seating-row" transform="translate(5.8, 0)">
                 <!-- Area and title -->
                 <!-- <text x="9.4" y="-1.6" class="area-title">Rad H1 (VIP)</text> -->
-                <text x="5" y="-1.6" class="area-title">Rad H1 (VIP)</text>
+                <text x="6" y="-1.6" class="area-title">Rad H1 (VIP)</text>
                 <!-- Tables -->
                 <rect x="-0.6" y="-0.4" width="0.6" height="0.8" class="seat spacer-seat"/>
                 <a class="seat" href="#"><rect x="0.0" y="-0.9" width="1.5" height="0.6" class="seat"/></a>
