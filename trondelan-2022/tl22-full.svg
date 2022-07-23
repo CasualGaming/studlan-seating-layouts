@@ -50,6 +50,10 @@
             font-size: 1.2px;
         }
 
+        .area-title-small {
+            font-size: 1.0px;
+        }
+
         .area-text {
             font-size: 1px;
         }
@@ -276,7 +280,7 @@
         <g class="stage" transform="translate(15, 2)">
             <!-- Area and title -->
             <rect width="18" height="4" class="stage-area"/>
-            <text x="9" y="2.5" class="area-title">Scene</text>
+            <text x="9" y="2.5" class="area-title-small">Scene</text>
             <!-- Left team -->
             <g class="seating-row" transform="translate(0.6, 4)">
                 <rect x="0.0" y="-0.9" width="0.8" height="0.6" class="seat spacer-seat"/>
@@ -328,22 +332,32 @@
             <text x="7.5" y="5" class="area-title">Soveområde</text>
         </g>
 
-        <!-- Southwest stand area -->
-        <g transform="translate(18.5, 32)">
-            <rect x="0" y="0" width="3.5" height="10" class="misc-area"/>
-            <text x="1.75" y="5" class="area-title">Stand</text>
+        <!-- Southwest stand area top -->
+        <g transform="translate(19, 32)">
+            <rect x="0" y="0" width="3" height="2" class="misc-area"/>
+        </g>
+
+        <!-- Southwest stand area bottom -->
+        <g transform="translate(19, 34)">
+            <rect x="0" y="0" width="3" height="8" class="misc-area"/>
+            <text x="1.5" y="4" class="area-title-small">Stand</text>
+        </g>
+
+        <!-- Southeast stand area top -->
+        <g transform="translate(26, 32)">
+            <rect x="0" y="0" width="3" height="2" class="misc-area"/>
         </g>
 
         <!-- Southeast stand area -->
-        <g transform="translate(26, 32)">
-            <rect x="0" y="0" width="3.5" height="10" class="misc-area"/>
-            <text x="1.75" y="5" class="area-title">Stand</text>
+        <g transform="translate(26, 34)">
+            <rect x="0" y="0" width="3" height="8" class="misc-area"/>
+            <text x="1.5" y="4" class="area-title-small">Stand</text>
         </g>
 
         <!-- Dørvakt -->
         <g transform="translate(24, 43)">
             <rect x="0" y="0" width="3" height="2" class="crew-area"/>
-            <text x="1.5" y="1" class="area-title">Vakt</text>
+            <text x="1.5" y="1" class="area-title-small">Vakt</text>
         </g>
 
         <!-- Left participant seats -->
