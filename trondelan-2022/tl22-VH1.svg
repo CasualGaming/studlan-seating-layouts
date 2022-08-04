@@ -360,16 +360,6 @@
             <text x="1.5" y="1" class="area-title-small">Vakt</text>
         </g>
 
-        <!-- West seating outline -->
-        <g transform="translate(3, 10)">
-            <polyline points="0,-3 0,21 20,21 20,3 14,-3 0,-3" class="participant-area"/>
-        </g>
-
-        <!-- East seating layout -->
-        <g class="participant-seats" transform="translate(26.6, 10)">
-            <polyline points="-1.6,3 -1.6,21 18.4,21 18.4,-3 4.4,-3 -1.6,3" class="participant-area"/>
-        </g>
-
         <!-- V1 seating -->
         <g transform="translate(3, 10)">
             <g class="seating-row" transform="translate(0.6, 0)">
