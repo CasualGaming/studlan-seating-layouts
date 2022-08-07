@@ -27,7 +27,7 @@
 
         .grid {
             /* DEBUG: Grid lines */
-            /*display: none;*/
+            display: none;
         }
 
         .grid line {
@@ -91,7 +91,7 @@
 
         rect.seat.spacer-seat {
             /* DEBUG */
-            /*display: none;*/
+            display: none;
         }
 
         /* Dynamic studlan styling: Available seat */
