@@ -331,13 +331,13 @@
         <!-- Southwest Smash area -->
         <g transform="translate(3, 36)">
             <rect x="0" y="0" width="15" height="6" class="misc-area"/>
-            <text x="7.5" y="3" class="area-title">Smash?</text>
+            <text x="7.5" y="3" class="area-title">Smash</text>
         </g>
 
-        <!-- Southeast NBG area -->
+        <!-- Southeast ??? area -->
         <g transform="translate(30, 36)">
             <rect x="0" y="0" width="15" height="6" class="misc-area"/>
-            <text x="7.5" y="3" class="area-title">NBG++?</text>
+            <text x="7.5" y="3" class="area-title">???</text>
         </g>
 
         <!-- Southwest stand area -->
