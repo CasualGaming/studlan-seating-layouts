@@ -27,7 +27,7 @@
 
         .grid {
             /* DEBUG: Grid lines */
-            /*display: none;*/
+            display: none;
         }
 
         .grid line {
@@ -334,10 +334,10 @@
             <text x="7.5" y="3" class="area-title">Smash</text>
         </g>
 
-        <!-- Southeast ??? area -->
+        <!-- Southeast BFG area -->
         <g transform="translate(30, 36)">
             <rect x="0" y="0" width="15" height="6" class="misc-area"/>
-            <text x="7.5" y="3" class="area-title">???</text>
+            <text x="7.5" y="3" class="area-title">BFG</text>
         </g>
 
         <!-- Southwest stand area -->
