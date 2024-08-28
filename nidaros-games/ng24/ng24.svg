@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 52">
 
     <!-- Measurements are in meters. -->
-    <!-- The inner hall dimensions (yellow lines) are 20x40kvm, plus ~2m at each side and around 6m extra at the bottom, so 24x50kvm ish. -->
+    <!-- Inner dimensions (yellow lines): 20x40kvm -->
+    <!-- Outer dimensions (flat area): 24.5x44.5kvm, rounded to 24x44kvm -->
+    <!-- Total area (including ~6m tribune): 24x50 -->
     <!-- 1m/1px of padding is added to the top, left and right (and some below) to draw outside the main area. -->
 
     <style type="text/css">
@@ -227,9 +229,9 @@
             <line x1="0" x2="0" y1="0" y2="50"/>
             <line x1="2" x2="2" y1="0" y2="44" class="zone-wall"/>
             <!-- Right wall -->
-            <g transform="translate(23, 12) rotate(90)"><text class="area-text">Nødutgang</text></g>
-            <line x1="24" x2="24" y1="0" y2="10"/>
-            <line x1="24" x2="24" y1="14" y2="48"/>
+            <g transform="translate(23, 14) rotate(90)"><text class="area-text">Nødutgang</text></g>
+            <line x1="24" x2="24" y1="0" y2="11.5"/>
+            <line x1="24" x2="24" y1="16.5" y2="48"/>
             <line x1="22" x2="22" y1="0" y2="44" class="zone-wall"/>
             <!-- Bottom walls -->
             <g transform="translate(21.5, 49) rotate(0)"><text class="area-text">Inngang</text></g>
@@ -249,8 +251,14 @@
             <line x1="22" x2="22" y1="44" y2="48"/>
         </g>
 
+        <!-- Crew area -->
+        <g transform="translate(2, 0)">
+            <rect x="0" y="0" width="20" height="3" class="crew-area"/>
+            <text x="10" y="1.5" class="area-title">Crew</text>
+        </g>
+
         <!-- Stage -->
-        <g class="stage" transform="translate(2, 3)">
+        <g class="stage" transform="translate(2, 6)">
             <!-- Area and title -->
             <rect width="20" height="4" class="stage-area"/>
             <text x="10" y="2.5" class="area-title-small">Scene</text>
@@ -276,46 +284,52 @@
             </g>
         </g>
 
-        <!-- Sitteområde scene -->
-        <g transform="translate(2, 11)">
-            <rect x="0" y="0" width="20" height="4" class="participant-area"/>
-            <text x="10" y="2" class="area-title-small">Stoler</text>
+        <!-- Høyre sitteområde scene -->
+        <g transform="translate(2, 15)">
+            <rect x="0" y="0" width="6" height="4" class="participant-area"/>
+            <text x="3" y="2" class="area-title-small">Stoler</text>
         </g>
 
-        <!-- Crew area -->
-        <g transform="translate(2, 16)">
-            <rect x="0" y="0" width="20" height="5" class="crew-area"/>
-            <text x="10" y="2.5" class="area-title">Crew</text>
+        <!-- Venstre sitteområde scene -->
+        <g transform="translate(16, 15)">
+            <rect x="0" y="0" width="6" height="4" class="participant-area"/>
+            <text x="3" y="2" class="area-title-small">Stoler</text>
+        </g>
+
+        <!-- FOH -->
+        <g transform="translate(9, 15)">
+            <rect x="0" y="0" width="6" height="4" class="crew-area"/>
+            <text x="3" y="2" class="area-title">Crew</text>
         </g>
 
         <!-- Bordplasser for PC -->
-        <g transform="translate(2, 22)">
-            <rect x="0" y="0" width="20" height="3" class="participant-area"/>
-            <text x="10" y="1.5" class="area-title-small">Bordplasser?</text>
+        <g transform="translate(2, 20)">
+            <rect x="0" y="0" width="20" height="5" class="participant-area"/>
+            <text x="10" y="2.5" class="area-title-small">Bordplasser</text>
         </g>
 
-        <!-- Mario Kart -->
-        <g transform="translate(2, 26)">
-            <rect x="0" y="0" width="20" height="3" class="misc-area"/>
-            <text x="10" y="1.5" class="area-title-small">Mario Kart osv.?</text>
+        <!-- Mario Kart & Smash -->
+        <g transform="translate(5, 26)">
+            <rect x="0" y="0" width="14" height="18" class="misc-area"/>
+            <text x="7" y="9" class="area-title-small">MK &amp; Smash</text>
         </g>
 
-        <!-- Smash -->
-        <g transform="translate(2, 30)">
-            <rect x="0" y="0" width="20" height="10" class="misc-area"/>
-            <text x="10" y="5" class="area-title">Smash</text>
+        <!-- Left stand area -->
+        <g transform="translate(0, 28)">
+            <rect x="0" y="0" width="3" height="12" class="misc-area"/>
+            <g transform="translate(1.5, 6) rotate(270)"><text class="area-title-small">Stand?</text></g>
         </g>
 
-        <!-- Stand area -->
-        <g transform="translate(4, 41)">
-            <rect x="0" y="0" width="16" height="3" class="misc-area"/>
-            <text x="8" y="1.5" class="area-title-small">Stand placeholder</text>
+        <!-- Right stand area -->
+        <g transform="translate(21, 28)">
+            <rect x="0" y="0" width="3" height="9" class="misc-area"/>
+            <g transform="translate(1.5, 4.5) rotate(90)"><text class="area-title-small">Stand?</text></g>
         </g>
 
         <!-- Dørvakt -->
-        <g transform="translate(20, 41)">
-            <rect x="0" y="0" width="2" height="3" class="crew-area"/>
-            <text x="1" y="1.5" class="area-title-small">Vakt</text>
+        <g transform="translate(21, 37)">
+            <rect x="0" y="0" width="3" height="3" class="crew-area"/>
+            <text x="1.5" y="1.5" class="area-title-small">Vakt</text>
         </g>
 
     </g>
