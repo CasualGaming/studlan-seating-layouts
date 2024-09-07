@@ -1,4 +1,4 @@
-# Studlan Seating Layouts
+# Studlan Seating Layouts (SSL)
 
 SVG seating layouts for [studlan](https://github.com/CasualGaming/studlan) and other stuff
 
