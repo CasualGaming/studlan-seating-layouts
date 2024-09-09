@@ -292,20 +292,20 @@
 
         <!-- Crew + FOH -->
         <g transform="translate(4, 16)">
-            <rect x="0" y="0" width="10" height="8" class="crew-area"/>
-            <text x="5" y="4" class="area-title-small">Crew</text>
+            <rect x="0" y="0" width="10" height="10" class="crew-area"/>
+            <text x="5" y="5" class="area-title-small">Crew</text>
         </g>
 
         <!-- Bordplasser for PC -->
         <g transform="translate(15, 16)">
-            <rect x="0" y="0" width="5" height="8" class="participant-area"/>
-            <text x="2.5" y="4" class="area-title-small">Bord</text>
+            <rect x="0" y="0" width="5" height="10" class="participant-area"/>
+            <text x="2.5" y="5" class="area-title-small">Bord</text>
         </g>
 
         <!-- Mario Kart & Smash -->
-        <g transform="translate(6, 26)">
-            <rect x="0" y="0" width="12" height="18" class="misc-area"/>
-            <text x="6" y="9" class="area-title-small">MK &amp; Smash</text>
+        <g transform="translate(6, 28)">
+            <rect x="0" y="0" width="12" height="16" class="misc-area"/>
+            <text x="6" y="8" class="area-title-small">MK &amp; Smash</text>
         </g>
 
         <!-- Left stand area -->
