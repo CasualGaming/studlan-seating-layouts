@@ -253,10 +253,10 @@
         </g>
 
         <!-- Infra -->
-        <g transform="translate(1, 1)">
+        <!-- <g transform="translate(1, 1)">
             <rect x="0" y="0" width="3" height="2" class="misc-area"/>
             <text x="1.5" y="1" class="area-title-tiny">Infra</text>
-        </g>
+        </g> -->
 
         <!-- Smash & MK -->
         <g transform="translate(0, 9)">
