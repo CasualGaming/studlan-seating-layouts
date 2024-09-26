@@ -13,7 +13,7 @@
         }
 
         text {
-            fill: white; /* TMP blueprint */
+            <!-- fill: white; /* TMP blueprint */ -->
             font-family: Arial;
             /* Change default alignment to center point */
             text-anchor: middle;
@@ -57,20 +57,18 @@
             font-size: 1.0px;
         }
 
-        .area-text {
-            font-size: 1.0px;
+        .area-title-tiny {
+            font-size: 0.8px;
         }
 
-        .sleeping-row-area {
-            stroke: #666;
-            stroke-width: 0.05px;
-            fill: #afb8;
+        .area-text {
+            font-size: 1.0px;
         }
 
         .stage-area {
             stroke: #666;
             stroke-width: 0.05px;
-            fill: #adf8;
+            fill: #f558;
         }
 
         .crew-area {
@@ -82,13 +80,13 @@
         .participant-area {
             stroke: #666;
             stroke-width: 0.05px;
-            fill: #ff88;
+            fill: #afb8;
         }
 
         .misc-area {
             stroke: #666;
             stroke-width: 0.05px;
-            fill: #afb8;
+            fill: #ff88;
         }
 
         rect.seat,
@@ -96,11 +94,6 @@
             stroke: #666;
             stroke-width: 0.05px;
             fill: #ddda;
-        }
-
-        rect.seat.spacer-seat {
-            /* DEBUG */
-            /*display: none;*/
         }
 
         /* Dynamic studlan styling: Available seat */
@@ -132,8 +125,8 @@
     </style>
 
     <!-- Background -->
-    <!-- TMP blueprint -->
-    <rect width="100%" height="100%" style="fill: darkblue;"/>
+    <!-- TMP blueprint (change fonts to white manually) -->
+    <!-- <rect width="100%" height="100%" style="fill: darkblue;"/> -->
 
     <!-- DEBUG: Image frame -->
     <!--<rect width="50" height="50" style="fill: none; stroke: #00f; stroke-width: 0.1px;"/>-->
@@ -227,12 +220,10 @@
             <line x1="23" x2="24" y1="0" y2="0"/>
             <!-- Left wall -->
             <line x1="0" x2="0" y1="0" y2="50"/>
-            <line x1="2" x2="2" y1="0" y2="44" class="zone-wall"/>
             <!-- Right wall -->
             <g transform="translate(23, 14) rotate(90)"><text class="area-text">Nødutgang</text></g>
             <line x1="24" x2="24" y1="0" y2="11.5"/>
             <line x1="24" x2="24" y1="16.5" y2="48"/>
-            <line x1="22" x2="22" y1="0" y2="44" class="zone-wall"/>
             <!-- Bottom walls -->
             <g transform="translate(21.5, 49) rotate(0)"><text class="area-text">Inngang</text></g>
             <g transform="translate(1, 45) rotate(270)"><text class="area-text">Nødutgang</text></g>
@@ -240,7 +231,7 @@
             <line x1="2" x2="2" y1="44" y2="48"/>
             <line x1="0" x2="2" y1="48" y2="48"/>
             <!-- Tribune -->
-            <text x="13" y="46" class="area-title">Tribune</text>
+            <text x="13" y="46" class="area-title-small">Tribune</text>
             <line x1="4" x2="22" y1="44" y2="44"/>
             <line x1="4" x2="22" y1="48" y2="48"/>
             <line x1="2" x2="4" y1="44" y2="44" class="zone-wall"/>
@@ -251,80 +242,64 @@
             <line x1="22" x2="22" y1="44" y2="48"/>
         </g>
 
-        <!-- Stage -->
-        <g class="stage" transform="translate(1, 4)">
+        <!-- Smash stage -->
+        <g class="stage" transform="translate(7, 2)">
             <!-- Area and title -->
-            <rect width="22" height="4" class="stage-area"/>
-            <text x="11" y="3" class="area-title-small">Scene</text>
-            <!-- Left team -->
-            <g class="seating-row" transform="translate(0, 2)">
-                <rect x="0.0" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-                <rect x="1.8" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-                <rect x="3.6" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-                <rect x="5.4" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-                <rect x="7.2" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-            </g>
-            <!-- Right team -->
-            <g class="seating-row" transform="translate(13, 2)">
-                <rect x="0.0" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-                <rect x="1.8" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-                <rect x="3.6" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-                <rect x="5.4" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-                <rect x="7.2" y="0" width="1.8" height="0.8" class="seat spacer-seat"/>
-            </g>
-            <!-- Sofakrok -->
-            <g class="seating-row" transform="translate(11, 0.5)">
-                <rect x="-1" y="0" width="2" height="1" class="seat spacer-seat"/>
-            </g>
+            <rect width="10" height="6" class="stage-area"/>
+            <text x="5" y="5" class="area-title-small">Smash-scene</text>
+            <!-- Participants -->
+            <rect x="4.0" y="2.1" width="0.8" height="1.8" class="seat spacer-seat"/>
+            <rect x="5.2" y="2.1" width="0.8" height="1.8" class="seat spacer-seat"/>
         </g>
 
-        <!-- Tournament prep. -->
+        <!-- Infra -->
+        <g transform="translate(1, 1)">
+            <rect x="0" y="0" width="3" height="2" class="misc-area"/>
+            <text x="1.5" y="1" class="area-title-tiny">Infra</text>
+        </g>
+
+        <!-- Smash & MK -->
         <g transform="translate(0, 9)">
-            <rect x="0" y="0" width="3" height="18" class="participant-area"/>
-            <g transform="translate(1.5, 9) rotate(270)"><text class="area-title-small">Tournament prep.</text></g>
+            <rect x="0" y="0" width="18" height="12" class="participant-area"/>
+            <text x="12" y="6" class="area-title">Smash &amp; MK</text>
         </g>
 
-        <!-- Publikum -->
-        <g transform="translate(4, 12)">
-            <rect x="0" y="0" width="16" height="3" class="participant-area"/>
-            <text x="8" y="1.8" class="area-title-small">Publikum</text>
+        <!-- Nidaros stage -->
+        <g transform="translate(0, 22)">
+            <rect x="0" y="0" width="8" height="8" class="stage-area"/>
+            <g transform="translate(4, 4) rotate(270)"><text class="area-title-small">Nidaros-scene</text></g>
         </g>
 
-        <!-- Crew + FOH -->
-        <g transform="translate(4, 16)">
-            <rect x="0" y="0" width="10" height="10" class="crew-area"/>
-            <text x="5" y="5" class="area-title-small">Crew</text>
+        <!-- GeoGuessr -->
+        <g transform="translate(0, 30)">
+            <rect x="0" y="0" width="8" height="6" class="misc-area"/>
+            <g transform="translate(4, 3) rotate(270)"><text class="area-title-small">GeoGuessr</text></g>
         </g>
 
-        <!-- Bordplasser for PC -->
-        <g transform="translate(15, 16)">
-            <rect x="0" y="0" width="5" height="10" class="participant-area"/>
-            <text x="2.5" y="5" class="area-title-small">Bord</text>
+        <!-- FOH -->
+        <g transform="translate(8, 22)">
+            <rect x="0" y="0" width="8" height="4" class="crew-area"/>
+            <text x="4" y="2" class="area-title-small">FOH</text>
         </g>
 
-        <!-- Mario Kart & Smash -->
-        <g transform="translate(6, 28)">
-            <rect x="0" y="0" width="12" height="16" class="misc-area"/>
-            <text x="6" y="8" class="area-title-small">MK &amp; Smash</text>
+        <!-- Crew -->
+        <g transform="translate(8, 26)">
+            <rect x="0" y="0" width="8" height="10" class="crew-area"/>
+            <text x="4" y="5" class="area-title-small">Crew</text>
         </g>
 
-        <!-- Left stand area -->
-        <g transform="translate(0, 28)">
+        <!-- Lounge -->
+        <g transform="translate(4, 38)">
+            <rect x="0" y="0" width="16" height="6" class="participant-area"/>
+            <text x="8" y="3" class="area-title">Lounge</text>
+        </g>
+
+        <!-- Right wall area -->
+        <g transform="translate(21, 23)">
             <rect x="0" y="0" width="3" height="12" class="misc-area"/>
-            <g transform="translate(1.5, 6) rotate(270)"><text class="area-title-small">Stand?</text></g>
+            <g transform="translate(1.5, 2) rotate(90)"><text class="area-title-tiny">Shop</text></g>
+            <g transform="translate(1.5, 6) rotate(90)"><text class="area-title-tiny">Info</text></g>
+            <g transform="translate(1.5, 10) rotate(90)"><text class="area-title-tiny">Tickets</text></g>
         </g>
-
-        <!-- Right stand area -->
-        <g transform="translate(21, 28)">
-            <rect x="0" y="0" width="3" height="9" class="misc-area"/>
-            <g transform="translate(1.5, 4.5) rotate(90)"><text class="area-title-small">Stand?</text></g>
-        </g>
-
-        <!-- Dørvakt -->
-        <g transform="translate(21, 37)">
-            <rect x="0" y="0" width="3" height="3" class="crew-area"/>
-            <text x="1.5" y="1.5" class="area-title-small">Vakt</text>
-        </g>
-
     </g>
 </svg>
