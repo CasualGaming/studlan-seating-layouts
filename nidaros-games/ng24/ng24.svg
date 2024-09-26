@@ -126,7 +126,7 @@
 
     <!-- Background -->
     <!-- TMP blueprint (change fonts to white manually) -->
-    <!-- <rect width="100%" height="100%" style="fill: darkblue;"/> -->
+    <rect width="100%" height="100%" style="fill: white;"/>
 
     <!-- DEBUG: Image frame -->
     <!--<rect width="50" height="50" style="fill: none; stroke: #00f; stroke-width: 0.1px;"/>-->
